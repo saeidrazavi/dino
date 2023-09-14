@@ -258,9 +258,6 @@ def train_dino(args):
         run_variables=to_restore,
         student=student,
         teacher=teacher,
-        optimizer=optimizer,
-        fp16_scaler=fp16_scaler,
-        dino_loss=dino_loss,
     )
     start_epoch = to_restore["epoch"]
 
