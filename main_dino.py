@@ -259,6 +259,7 @@ def train_dino(args):
         run_variables=None,
         student=student,
         teacher=teacher,
+        dino_loss=dino_loss,
     )
     start_epoch = to_restore["epoch"]
 
